@@ -3,6 +3,7 @@ ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
+gem 'rails_12factor'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 # Use SCSS for stylesheets
