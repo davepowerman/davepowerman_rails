@@ -1,15 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    font: normal 18px/2em ubuntu, Helvetica;
+}
+
+h1 {
+    font-size: 1.1em;
+}
+
+article,
+aside,
+details,
+dialog,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+    border-radius: 4px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(30,150,255,0.7);
+    box-shadow: 0px 0px 1px 1px rgba(30,150,255,0.7);
+}
+
+input[type="text"] {
+    padding: 6px 12px;
+    height: 28px;
+}
+
+
+#header-container {
+    width: 100%;
+    height: auto;
+}
+
+#main-header {
+    margin: 0 auto;
+    color: #000;
+    border-bottom: 10px solid #eee;
+}
+
+
+
+
+
+#main-header > div.row {
+     height: 50px; 
+     background: #2c0; 
+}
+
+#header-logo {
+    background: #000;
+}
+
+#header-name {
+    width: 100%;
+    height: 100%;
+    padding: 8px; 
+}
+
+#nav-container {
+    width: 100%;
+    display: none;
+}
+
+#nav-container ul li{
+    
+}
+
+#nav-container ul li a {
+    display: block;
+    padding: 14px 12px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    font-size: 22px;
+}
+
+#nav-container ul li a:active {
+    background: #2c0;
+}
+
+#nav-container ul li a:hover {
+    background: #2c0;
+}
+
+#nav-container aside {
+    min-width: 50px;
+    background: #eee;
+    border-left: 1px solid #ccc;
+}
+
+#main-nav {
+    display: none;
+}
+
+#user-nav {
+    display: none;
+    height: 100%;
+}
+
+#search-container {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#search-container input[type="image"] {
+    position: absolute;
+    width: 28px;
+    left: 0px;
+    border: 0px;
+    margin: 14px 6px;
+    padding: 6px 3px;
+    border-right: 1px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#search-container input[type="text"] {
+    padding-left: 35px;
+    font-size: 16px;
+    margin: 13px 5px;
+    -webkit-flex: 1;
+}
+
+#page-container {
+    height: auto;
+    
+}
+
+#page-title {
+    width: 100%;
+    padding: 4px 0px;
+    text-align: center;
+    background: #444;
+    color: #fff;
+}
+
+#main-page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content {
+
+}
+
+.header-icon {
+    min-width: 50px;
+    height: 50px;    
+}
+
+.header-icon img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+
+.header-btn {
+    min-width: 36px;
+    height: 36px;
+    padding: 2px;
+    margin: 4px;
+    border: 1px solid #000;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 6px;
+}
+
+.header-btn img {
+    width: 36px;
+    height: 36px;
+}
+
+.header-btn:active {
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+
+.btn {
+    border-radius: 4px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+}
+
+.btn:focus {
+    outline: none;
+    border: 1px solid rgba(30,150,255,0.7);
+    box-shadow: 0px 0px 1px 1px rgba(30,150,255,0.7);
+}
+
+
+.btn:hover {
+    
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+}
+
+.col {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+}
+
+.span1 {
+    width: 100%;
+}
+
+.scroll-vertical {
+    overflow-x: auto;
+}
+
+.content-column {
+    min-width: 80%;
+}
+
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+#main-header > div.row {
+     height: 50px; 
+     background: #fff; 
+}
+
+
+
+#header-name {
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    border: 10px solid #000;
+    border: 10px  10px 10px 10px; 
+}*/
+

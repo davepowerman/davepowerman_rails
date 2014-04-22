@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Davepowerman</title>
+  <title>davepowerman.com</title>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= favicon_link_tag 'mb-icon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+  <%#= stylesheet_link_tag    'jquery.mobile-1.4.2.min', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'responsive', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.mobile-1.4.2.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery-1.11.0.min', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'responsive', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <container id="header-container">
+    <header id="main-header">
+      <div class="row">
+        <div id="header-logo" class="header-icon">
+          <%= image_tag "power.svg" %>
+      </div>
+        
+      <div id="header-name">
+          <h1>davepowerman.com</h1>
+      </div>
+        
+      <div id="nav-toggle-btn" class="header-btn">
+          <%= image_tag "menu.png" %>
+        </div>
+      </div>
+      <container id="nav-container" class="row">
+        <div class="span1">
+            <div id="search-container" class="">
+                <form action="" method="" class="row">
+                    <input type="text">
+                    <%= image_tag "search.png" %>
+                </form>
+            </div>
+            <nav id="main-nav">
+                
+                <ul>
+                    <li><% link_to "Home", controller: "staticpages", action: "index" %></li>
+                    <li><% link_to "Challenge", controller: "staticpages", action: "index" %></li>
+                    <li><% link_to "Videos", controller: "staticpages", action: "index" %></li>
+                    <li><% link_to "News", controller: "staticpages", action: "index" %></li>
+                </ul>
+            </nav>
+            
+            <nav id="user-nav">
+                <ul>
+                    <li><% link_to "Sign in", controller: "staticpages", action: "index" %></li>
+                    <li><% link_to "Sign out", controller: "staticpages", action: "index" %></li>
+                    <li><% link_to "Profile", controller: "staticpages", action: "index" %></li>
+                </ul>
+            </nav>
+        </div>
+        <aside>
+            <div id="user-toggle-btn" class="header-btn">
+                <%= image_tag "user.png" %>
+            </div>
+        </aside>
+      </container>
+    </header>
+  </container>
+  <container id="page-container">
+    <div id="main-page">
+      <section>
+        <hgroup id="page-title">
+          <h1>Page Title</h1>
+        </hgroup>
+        
+        <div id="content">
+          <%= yield %>
+        </div>
+      </section>
+    </div>
+  </container>
 </body>
 </html>
