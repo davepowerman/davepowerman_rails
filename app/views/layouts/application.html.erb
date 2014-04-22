@@ -67,11 +67,11 @@
     <div id="main-page">
       <section>
         <hgroup id="page-title">
-          <h1>Page Title</h1>
+          <h1><%= yield :heading %></h1>
         </hgroup>
         
         <div id="content">
-          <%= yield %>
+          <%= yield :content%>
         </div>
       </section>
     </div>
