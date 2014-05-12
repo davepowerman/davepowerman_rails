@@ -1,0 +1,35 @@
+/* Tablet styles: 600px - 999px */
+/* Full desktop styles: 1000px + */
+@media screen and (min-width: 1000px) {
+  /* line 9, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  body {
+    font-size: 100%;
+  }
+
+  /* line 13, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  #header-inner {
+    max-width: 1150px;
+    background: #fff;
+    margin-top: 0px;
+  }
+
+  /* line 19, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  #main-page {
+    max-width: 1150px;
+  }
+
+  /* line 23, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  #nav-main {
+    display: block;
+  }
+
+  /* line 27, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  #nav-main ul li {
+    width: auto;
+  }
+
+  /* line 31, /var/www/davepowerman-rails/app/assets/stylesheets/responsive.css.scss */
+  .header-btn {
+    display: none;
+  }
+}

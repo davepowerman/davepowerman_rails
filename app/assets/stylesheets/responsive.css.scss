@@ -3,13 +3,13 @@
     
 }
 
-/* Full desktop styles: 1200px + */
-@media screen and (min-width: 1200px) {
+/* Full desktop styles: 1000px + */
+@media screen and (min-width: 1000px) {
     body {
         font-size: 100%;
     }
 
-    #main-header {
+    #header-inner {
         max-width: 1150px;
         background: #fff;
         margin-top: 0px;
@@ -19,11 +19,11 @@
         max-width: 1150px;
     }
     
-    #main-nav {
+    #nav-main {
         display: block;
     }
     
-    #main-nav ul li {
+    #nav-main ul li {
         width: auto;
     }
     

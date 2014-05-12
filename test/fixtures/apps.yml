@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  path: 
+  date: 2014-05-09
+
+two:
+  name: 
+  path: 
+  date: 2014-05-09
